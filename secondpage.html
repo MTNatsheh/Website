@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            grid-template-columns: 200px 1fr;
+        }
+        header {
+            grid-column: span 2;
+            background-color: #c0e4f3;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        nav a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #0073e6;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        footer {
+            grid-column: span 2;
+            background-color: #c0e4f3;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        a.back {
+            display: inline-block; 
+            margin-top: 20px; 
+            background-color: #0073e6; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none;
+        }
+        img {
+            width: 200px; /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            display: block;
+            margin: 0 auto;
+            object-fit: cover; /* Ensures images maintain aspect ratio within the set dimensions */
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Second Page</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <h3>Navigation</h3>
+            <a href="Computer Project.html">Home</a>
+            <a href="secondpage.html">Second Page</a>
+            <!-- Add more links as needed -->
+        </nav>
+        <main>
+            <div>
+                <img src="heart.png" alt="Heart Disease Image">
+                <p>The Global Perspective Project highlights the importance of understanding various diseases that affect populations worldwide. By raising awareness, we can promote healthier communities.</p>
+            </div>
+            <div>
+                <img src="doctor.png" alt="Doctor Image">
+                <p>Through education and research, we aim to address health disparities and encourage proactive measures to combat diseases. Together, we can make a difference!</p>
+            </div>
+            <div>
+                <iframe src="https://www.youtube.com/watch?v=X1GT2bKgci8" allowfullscreen></iframe>
+                <p>Learn more about the importance of disease awareness and health education through this video.</p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>2024 Global Perspective Project on Diseases.</p>
+    </footer>
+</body>
+</html>
